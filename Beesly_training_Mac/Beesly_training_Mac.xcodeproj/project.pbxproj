@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F4183A2C950774003249D9 /* Beesly_training_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F418392C950774003249D9 /* Beesly_training_MacApp.swift */; };
+		04F4183C2C950774003249D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4183B2C950774003249D9 /* ContentView.swift */; };
+		04F4183E2C950775003249D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F4183D2C950775003249D9 /* Assets.xcassets */; };
+		04F418412C950775003249D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F418402C950775003249D9 /* Preview Assets.xcassets */; };
+		04F4184C2C950776003249D9 /* Beesly_training_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4184B2C950776003249D9 /* Beesly_training_MacTests.swift */; };
+		04F418562C950776003249D9 /* Beesly_training_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F418552C950776003249D9 /* Beesly_training_MacUITests.swift */; };
+		04F418582C950776003249D9 /* Beesly_training_MacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F418572C950776003249D9 /* Beesly_training_MacUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F418482C950776003249D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F4182E2C950774003249D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F418352C950774003249D9;
+			remoteInfo = Beesly_training_Mac;
+		};
+		04F418522C950776003249D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F4182E2C950774003249D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F418352C950774003249D9;
+			remoteInfo = Beesly_training_Mac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F418362C950774003249D9 /* Beesly_training_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beesly_training_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F418392C950774003249D9 /* Beesly_training_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beesly_training_MacApp.swift; sourceTree = "<group>"; };
+		04F4183B2C950774003249D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04F4183D2C950775003249D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F418402C950775003249D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04F418422C950775003249D9 /* Beesly_training_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beesly_training_Mac.entitlements; sourceTree = "<group>"; };
+		04F418472C950776003249D9 /* Beesly_training_MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Beesly_training_MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F4184B2C950776003249D9 /* Beesly_training_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beesly_training_MacTests.swift; sourceTree = "<group>"; };
+		04F418512C950776003249D9 /* Beesly_training_MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Beesly_training_MacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F418552C950776003249D9 /* Beesly_training_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beesly_training_MacUITests.swift; sourceTree = "<group>"; };
+		04F418572C950776003249D9 /* Beesly_training_MacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beesly_training_MacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F418332C950774003249D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F418442C950776003249D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F4184E2C950776003249D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F4182D2C950774003249D9 = {
+			isa = PBXGroup;
+			children = (
+				04F418382C950774003249D9 /* Beesly_training_Mac */,
+				04F4184A2C950776003249D9 /* Beesly_training_MacTests */,
+				04F418542C950776003249D9 /* Beesly_training_MacUITests */,
+				04F418372C950774003249D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F418372C950774003249D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F418362C950774003249D9 /* Beesly_training_Mac.app */,
+				04F418472C950776003249D9 /* Beesly_training_MacTests.xctest */,
+				04F418512C950776003249D9 /* Beesly_training_MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F418382C950774003249D9 /* Beesly_training_Mac */ = {
+			isa = PBXGroup;
+			children = (
+				04F418392C950774003249D9 /* Beesly_training_MacApp.swift */,
+				04F4183B2C950774003249D9 /* ContentView.swift */,
+				04F4183D2C950775003249D9 /* Assets.xcassets */,
+				04F418422C950775003249D9 /* Beesly_training_Mac.entitlements */,
+				04F4183F2C950775003249D9 /* Preview Content */,
+			);
+			path = Beesly_training_Mac;
+			sourceTree = "<group>";
+		};
+		04F4183F2C950775003249D9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04F418402C950775003249D9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04F4184A2C950776003249D9 /* Beesly_training_MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F4184B2C950776003249D9 /* Beesly_training_MacTests.swift */,
+			);
+			path = Beesly_training_MacTests;
+			sourceTree = "<group>";
+		};
+		04F418542C950776003249D9 /* Beesly_training_MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F418552C950776003249D9 /* Beesly_training_MacUITests.swift */,
+				04F418572C950776003249D9 /* Beesly_training_MacUITestsLaunchTests.swift */,
+			);
+			path = Beesly_training_MacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F418352C950774003249D9 /* Beesly_training_Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F4185B2C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_Mac" */;
+			buildPhases = (
+				04F418322C950774003249D9 /* Sources */,
+				04F418332C950774003249D9 /* Frameworks */,
+				04F418342C950774003249D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beesly_training_Mac;
+			productName = Beesly_training_Mac;
+			productReference = 04F418362C950774003249D9 /* Beesly_training_Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F418462C950776003249D9 /* Beesly_training_MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F4185E2C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_MacTests" */;
+			buildPhases = (
+				04F418432C950776003249D9 /* Sources */,
+				04F418442C950776003249D9 /* Frameworks */,
+				04F418452C950776003249D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F418492C950776003249D9 /* PBXTargetDependency */,
+			);
+			name = Beesly_training_MacTests;
+			productName = Beesly_training_MacTests;
+			productReference = 04F418472C950776003249D9 /* Beesly_training_MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F418502C950776003249D9 /* Beesly_training_MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F418612C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_MacUITests" */;
+			buildPhases = (
+				04F4184D2C950776003249D9 /* Sources */,
+				04F4184E2C950776003249D9 /* Frameworks */,
+				04F4184F2C950776003249D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F418532C950776003249D9 /* PBXTargetDependency */,
+			);
+			name = Beesly_training_MacUITests;
+			productName = Beesly_training_MacUITests;
+			productReference = 04F418512C950776003249D9 /* Beesly_training_MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F4182E2C950774003249D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					04F418352C950774003249D9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					04F418462C950776003249D9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 04F418352C950774003249D9;
+					};
+					04F418502C950776003249D9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 04F418352C950774003249D9;
+					};
+				};
+			};
+			buildConfigurationList = 04F418312C950774003249D9 /* Build configuration list for PBXProject "Beesly_training_Mac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F4182D2C950774003249D9;
+			productRefGroup = 04F418372C950774003249D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F418352C950774003249D9 /* Beesly_training_Mac */,
+				04F418462C950776003249D9 /* Beesly_training_MacTests */,
+				04F418502C950776003249D9 /* Beesly_training_MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F418342C950774003249D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F418412C950775003249D9 /* Preview Assets.xcassets in Resources */,
+				04F4183E2C950775003249D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F418452C950776003249D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F4184F2C950776003249D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F418322C950774003249D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4183C2C950774003249D9 /* ContentView.swift in Sources */,
+				04F4183A2C950774003249D9 /* Beesly_training_MacApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F418432C950776003249D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F4184C2C950776003249D9 /* Beesly_training_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F4184D2C950776003249D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F418582C950776003249D9 /* Beesly_training_MacUITestsLaunchTests.swift in Sources */,
+				04F418562C950776003249D9 /* Beesly_training_MacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F418492C950776003249D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F418352C950774003249D9 /* Beesly_training_Mac */;
+			targetProxy = 04F418482C950776003249D9 /* PBXContainerItemProxy */;
+		};
+		04F418532C950776003249D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F418352C950774003249D9 /* Beesly_training_Mac */;
+			targetProxy = 04F418522C950776003249D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04F418592C950776003249D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F4185A2C950776003249D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		04F4185C2C950776003249D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beesly_training_Mac/Beesly_training_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beesly_training_Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = T99D85B36U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		04F4185D2C950776003249D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beesly_training_Mac/Beesly_training_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Beesly_training_Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = T99D85B36U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		04F4185F2C950776003249D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T99D85B36U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beesly_training_Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beesly_training_Mac";
+			};
+			name = Debug;
+		};
+		04F418602C950776003249D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T99D85B36U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beesly_training_Mac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Beesly_training_Mac";
+			};
+			name = Release;
+		};
+		04F418622C950776003249D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T99D85B36U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Beesly_training_Mac;
+			};
+			name = Debug;
+		};
+		04F418632C950776003249D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T99D85B36U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AndyLiu.Beesly-training-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Beesly_training_Mac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F418312C950774003249D9 /* Build configuration list for PBXProject "Beesly_training_Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F418592C950776003249D9 /* Debug */,
+				04F4185A2C950776003249D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F4185B2C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F4185C2C950776003249D9 /* Debug */,
+				04F4185D2C950776003249D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F4185E2C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F4185F2C950776003249D9 /* Debug */,
+				04F418602C950776003249D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F418612C950776003249D9 /* Build configuration list for PBXNativeTarget "Beesly_training_MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F418622C950776003249D9 /* Debug */,
+				04F418632C950776003249D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F4182E2C950774003249D9 /* Project object */;
+}
