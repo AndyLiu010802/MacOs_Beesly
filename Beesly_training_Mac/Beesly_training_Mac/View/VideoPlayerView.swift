@@ -223,11 +223,20 @@ struct VideoPlayerView: View {
                         
                         // Calculate default coordinates for the annotation
                         let imageSize = uiImage.size
+
+                        // Define the width and height of your rectangle
+                        let rectWidth = Int(imageSize.width * 1/2)   // Half of the image width
+                        let rectHeight = Int(imageSize.height * 1/2) // Half of the image height
+
+                        // Calculate the x and y to center the rectangle
+                        let x = Int((imageSize.width - CGFloat(rectWidth)) / 2)
+                        let y = Int((imageSize.height - CGFloat(rectHeight)) / 2)
+
                         let coordinates = CapturedImage.Coordinates(
-                            x: Int(imageSize.width * 1/3),
-                            y: Int(imageSize.height ),
-                            width: Int(imageSize.width * 1/2),
-                            height: Int(imageSize.height)
+                            x: x,
+                            y: y,
+                            width: rectWidth,
+                            height: rectHeight
                         )
                         
                         // Create the CapturedImage structure
