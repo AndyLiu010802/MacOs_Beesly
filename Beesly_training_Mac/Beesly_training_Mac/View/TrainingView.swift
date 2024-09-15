@@ -9,7 +9,10 @@ struct TrainingView: View {
     @State private var trainingProgress: Double = 0.0
     @State private var modelExported: Bool = false
     @State private var errorMessage: String = ""
-    @State private var iterationCount: Int = 500
+    @State private var iterationCount: Int = 1000
+    @State private var stepSize: Int = 10
+    @State private var isFolderValid: Bool = false
+    @State private var showAlert: Bool = false
 
     var body: some View {
         VStack {
@@ -19,6 +22,7 @@ struct TrainingView: View {
 
             Button(action: {
                 selectFolder()
+               
             }) {
                 Text("Upload Folder")
                     .padding()
@@ -35,10 +39,26 @@ struct TrainingView: View {
             // Edit Iteration
             HStack {
                 Text("Iterations:")
-                Stepper(value: $iterationCount, in: 1000...10000) {
-                    Text("\(iterationCount)")
-                }
-                .padding()
+                Stepper(onIncrement: {
+                                if iterationCount + stepSize <= 10000 {
+                                    iterationCount += stepSize
+                                }
+                            }, onDecrement: {
+                                if iterationCount - stepSize >= 1000 {
+                                    iterationCount -= stepSize
+                                }
+                            }) {
+                                Text("Iterations: \(iterationCount)")
+                            }
+                            .padding()
+
+                            Picker("Step Size", selection: $stepSize) {
+                                Text("10").tag(10)
+                                Text("100").tag(100)
+                                Text("1000").tag(1000)
+                            }
+                            .pickerStyle(SegmentedPickerStyle())
+                            .padding()
             }
 
             if isTraining {
@@ -59,7 +79,8 @@ struct TrainingView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .disabled(folderURL == nil || isTraining)
+            .disabled(folderURL == nil || isTraining || !isFolderValid)
+
 
             if modelExported {
                 Text("Model exported successfully!")
@@ -74,6 +95,10 @@ struct TrainingView: View {
             }
         }
         .padding()
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+        }
+
     }
 
     // Select folder
@@ -85,9 +110,34 @@ struct TrainingView: View {
         panel.prompt = "Choose Folder"
         
         if panel.runModal() == .OK {
-            self.folderURL = panel.url
+            if let url = panel.url {
+                self.folderURL = url
+                self.isFolderValid = validateFolder(url: url)
+                if isFolderValid {
+                    // Folder is valid, dismiss any previous alerts
+                    self.showAlert = false
+                    self.errorMessage = ""
+                } else {
+                    self.errorMessage = "Selected folder is invalid. Please select a folder containing images and annotations."
+                    self.showAlert = true
+                }
+            }
         }
     }
+
+
+    func validateFolder(url: URL) -> Bool {
+        let fileManager = FileManager.default
+        do {
+            let contents = try fileManager.contentsOfDirectory(atPath: url.path)
+            let imageFiles = contents.filter { $0.lowercased().hasSuffix(".jpg") || $0.lowercased().hasSuffix(".png") }
+            let annotationFiles = contents.filter { $0.lowercased().hasSuffix(".json") }
+            return !imageFiles.isEmpty && !annotationFiles.isEmpty
+        } catch {
+            return false
+        }
+    }
+
 
     // Export destination
     func selectExportLocation() {
@@ -105,21 +155,24 @@ struct TrainingView: View {
 
     // CreateML Model training
     func trainObjectDetectionModel(with folderURL: URL, exportURL: URL) {
+        guard isFolderValid else {
+            self.errorMessage = "Cannot start training. The selected folder is invalid."
+            self.showAlert = true
+            return
+        }
+
         isTraining = true
         trainingProgress = 0.0
         errorMessage = ""
 
         DispatchQueue.global(qos: .userInitiated).async {
             do {
-                
                 let dataSource = MLObjectDetector.DataSource.directoryWithImagesAndJsonAnnotation(at: folderURL)
 
-               // parameter setting (maybe can add some more for higher accuracy)
                 var parameters = MLObjectDetector.ModelParameters()
                 parameters.maxIterations = iterationCount
 
                 let model = try MLObjectDetector(trainingData: dataSource, parameters: parameters, annotationType: .boundingBox(units: .pixel, origin: .topLeft, anchor: .topLeft))
-
 
                 try model.write(to: exportURL)
 
@@ -131,10 +184,12 @@ struct TrainingView: View {
                 DispatchQueue.main.async {
                     self.isTraining = false
                     self.errorMessage = "Training failed: \(error.localizedDescription)"
+                    self.showAlert = true
                     print("Training failed: \(error)")
                 }
             }
         }
     }
+
 }
 
