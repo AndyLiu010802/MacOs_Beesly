@@ -9,7 +9,7 @@ struct TrainingView: View {
     @State private var trainingProgress: Double = 0.0
     @State private var modelExported: Bool = false
     @State private var errorMessage: String = ""
-    @State private var iterationCount: Int = 2000
+    @State private var iterationCount: Int = 500
 
     var body: some View {
         VStack {

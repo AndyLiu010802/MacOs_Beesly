@@ -43,6 +43,7 @@
 		04F4189C2C950855003249D9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04F4189B2C950855003249D9 /* FirebaseStorage */; };
 		04F4189E2C950855003249D9 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 04F4189D2C950855003249D9 /* FirebaseStorageCombine-Community */; };
 		04F418A02C950855003249D9 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 04F4189F2C950855003249D9 /* FirebaseVertexAI-Preview */; };
+		04F7500D2C9717B800C3BF1C /* FrameSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7500C2C9717B800C3BF1C /* FrameSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		04F418672C9507D0003249D9 /* CapturedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedImage.swift; sourceTree = "<group>"; };
 		04F418682C9507D0003249D9 /* TrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
 		04F418692C9507D0003249D9 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		04F7500C2C9717B800C3BF1C /* FrameSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				04F418652C9507CF003249D9 /* PhotoDetailView.swift */,
 				04F418682C9507D0003249D9 /* TrainingView.swift */,
 				04F418692C9507D0003249D9 /* VideoPlayerView.swift */,
+				04F7500C2C9717B800C3BF1C /* FrameSelectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				04F4186D2C9507D0003249D9 /* TrainingView.swift in Sources */,
 				04F4186A2C9507D0003249D9 /* PhotoDetailView.swift in Sources */,
 				04F4186E2C9507D0003249D9 /* VideoPlayerView.swift in Sources */,
+				04F7500D2C9717B800C3BF1C /* FrameSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
