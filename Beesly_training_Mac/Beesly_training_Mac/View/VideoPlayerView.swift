@@ -202,7 +202,8 @@ struct VideoPlayerView: View {
     
     private func performCapture() {
         selectedVideos.forEach { url in
-            capturedFramesDirectory = captureFrames(from: url, withTemplateRect: templateRect)
+            let videoFileName = url.lastPathComponent
+            capturedFramesDirectory = captureFrames(from: url, withTemplateRect: templateRect, videoFileName: videoFileName)
             if capturedFramesDirectory != nil {
                 addToCollectionView(for: url)
             }
@@ -215,7 +216,7 @@ struct VideoPlayerView: View {
         capturedVideos[videoName] = capturedFramesDirectory
     }
     
-    private func captureFrames(from url: URL, withTemplateRect templateRect: CGRect?) -> URL? {
+    private func captureFrames(from url: URL, withTemplateRect templateRect: CGRect?, videoFileName: String) -> URL? {
         let asset = AVAsset(url: url)
         let generator = AVAssetImageGenerator(asset: asset)
         generator.appliesPreferredTrackTransform = true
@@ -227,7 +228,7 @@ struct VideoPlayerView: View {
         do {
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
         } catch {
-            print("Error creating directory: \(error)")
+            print("createDirectory error: \(error)")
             return nil
         }
         
@@ -291,7 +292,9 @@ struct VideoPlayerView: View {
                                 imageRef: imageRef,
                                 frameIndex: i,
                                 coordinates: coordinates,
-                                directory: directory
+                                directory: directory,
+                                videoFileName: videoFileName
+                                
                             )
                         } else {
                             print("No tracking results at time \(i)")
@@ -392,16 +395,18 @@ struct VideoPlayerView: View {
         )
     }
     
-    private func saveCapturedImage(imageRef: CGImage, frameIndex: Int, coordinates: CapturedImage.Coordinates, directory: URL) {
-        let frameFileName = "\(frameIndex).jpg"
+    private func saveCapturedImage(imageRef: CGImage, frameIndex: Int, coordinates: CapturedImage.Coordinates, directory: URL, videoFileName: String) {
+       
+       
+        let frameFileName = "\(videoFileName)_\(frameIndex).jpg"
         let frameURL = directory.appendingPathComponent(frameFileName)
         let uiImage = NSImage(cgImage: imageRef, size: NSSize(width: imageRef.width, height: imageRef.height))
         if let data = uiImage.tiffRepresentation {
             do {
-                // Save the image file
+             
                 try data.write(to: frameURL)
                 
-                // Create the CapturedImage structure
+     
                 let capturedImage = CapturedImage(
                     imageName: frameFileName,
                     imageURL: frameURL,
@@ -413,18 +418,19 @@ struct VideoPlayerView: View {
                     ]
                 )
                 
-                // Convert CapturedImage to JSON Data
+              
                 let jsonData = try JSONEncoder().encode(capturedImage)
                 
-                // Save JSON to a file
-                let jsonFileName = "\(frameIndex).json"
+               
+                let jsonFileName = "\(videoFileName)_\(frameIndex).json"
                 let jsonURL = directory.appendingPathComponent(jsonFileName)
                 try jsonData.write(to: jsonURL)
                 
             } catch {
-                print("Error saving image or JSON: \(error)")
+                print("save image error: \(error)")
             }
         }
     }
+
 }
 
